@@ -24,6 +24,10 @@ jobs:
         run: npm run lint:ts
       - name: Run styles lint and format check
         run: npm run lint:css
+      - name: "Legend"
+        run: echo "Legen-wait-for-it$LEGEND"
+        env: 
+          LEGEND: "Dary"
       
   deploy:
     needs: build
