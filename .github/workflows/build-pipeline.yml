@@ -29,7 +29,7 @@ jobs:
         env: 
           LEGEND: "Dary"
       - name: "Secret"
-        run: echo "Here is my secret: $SECRET"
+        run: echo "My secret is $SECRET"
         env: 
           SECRET: ${{secrets.PASSWORD}}
       
