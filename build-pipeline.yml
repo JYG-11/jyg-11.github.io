@@ -28,6 +28,10 @@ jobs:
         run: echo "Legen-wait-for-it$LEGEND"
         env: 
           LEGEND: "Dary"
+      - name: "Secret"
+        run: echo "My secret is $SECRET"
+        env: 
+          SECRET: ${{secrets.PASSWORD}}
       
   deploy:
     needs: build
